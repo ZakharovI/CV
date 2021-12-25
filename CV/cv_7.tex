@@ -1,0 +1,226 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage{multicol}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[hyperref]{}
+\usepackage[scale=0.9]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Zakharov Igor \newline} % Your first name
+\familyname{Aleksandrovich} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+%\title{Curriculum Vitae}
+\address{13, Pushkinskaya}{Korolev, Russia 141090}
+\mobile{+7 (916) 624 94 84}
+\email{ia2002zakharov@gmail.com}
+\extrainfo{\href{https://github.com/ZakharovI}{Github: ZakharovI}}
+\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+%
+%\makelettertitle % Print letter title
+%
+%\lipsum[1-2] % Dummy text
+%\lipsum[4] % Dummy text
+%
+%\makeletterclosing % Print letter signature
+%
+%\newpage
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{May 2020 -- Ongoing}{Higher School of Economics}{\newline BA in Applied Mathematics and Computer Science}{}{}{GPA -- 6.9/10}  % Arguments not required can be left empty
+%\cventry{2016}{D.A.V. Public School, Bistupur}{\newline Mathematics and Computer Science}{Class 12}{}{GPA -- 94.00\%}  % 
+%\cventry{2014}{A.D.L.S. Sunshine School, Sakchi}{\newline Mathematics and Computer Science}{Class 10}{}{GPA -- 95.20\%}  %
+%\section{%Masters Thesis}
+
+%\cvitem{Title}{\emph{Money Is The Root Of All Evil -- Or Is It?}}
+%\cvitem{Supervisors}{Professor James Smith \& Associate Professor Jane Smith}
+%\cvitem{Description}{This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.}
+
+%\cventry{2011--2012}{Summer Intern}{\textsc{Lehman Brothers}}{Los Angeles}{}{Rated "truly distinctive" for Analytical Skills and Teamwork.}
+
+%------------------------------------------------
+
+\section{Projects}
+
+\cventry{Sep 2018 -- May 2019}{Testing system for solving logical tasks on scheme-based programming language}{\textit{Gusarev Roman Valerievich, Moscow}}{}{}{
+\begin{itemize}
+\item Scheme-based programming languge parcer.
+\item Frontend development.
+\end{itemize}}
+
+\cventry{May 2019 -- June 2019}{Programming summer school}{\textit{Zakharov Aleksander Timofeevich, Korolev}}{}{}{
+\begin{itemize}
+\item Judge system setup.
+\item Creating olympiad programming curriculum (C' level).
+\end{itemize}}
+
+\cventry{May 2020 -- June 2020}{Programming summer school}{\textit{Zakharov Aleksander Timofeevich, Korolev}}{}{}{
+\begin{itemize}
+\item Judge system setup.
+\item Creating olympiad programming curriculum (Ccpp - B' level).
+\item Teaching small groups of students.
+\end{itemize}}
+
+\cventry{Sep 2018 -- May 2019}{Testing system for solving logical tasks on scheme-based programming language}{\textit{Gusarev Roman Valerievich, Moscow}}{}{}{
+\begin{itemize}
+\item Scheme-based programming languge parcer.
+\item Frontend development.
+\end{itemize}}
+
+\cventry{Oct 2020 -- Ongoing}{Development of a turn-based strategy game prototype}{\textit{Chumakov Oleg Olegovich, CEO Luden.io, Moscow}}{}{}{
+\begin{itemize}
+\item Procedural generation of card playing field.
+\item Working on game logic and units interaction.
+\item Participation in "Game Off 2021" jam.
+\end{itemize}}
+
+
+%\cventry{ Mar 2017}{Gaana (Songs) Downloader \href{https://github.com/sinAshish/Gaana-Downloader}{[Code]}}{\textit{Self-motivated}}{}{}{
+%\begin{itemize}
+%\item A script to download all the songs from \href{https://www.gaana.com}{gaana.com} by just entering the album name.
+%\end{itemize}}
+%
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Achievements}
+
+\cventry{2017}{Russian Team Olympiad in Informatics}{}{}{}{
+\begin{itemize}
+\item prize-winner
+\end{itemize}}
+
+\cventry{2018}{Moscow Olympiad in Informatics}{}{}{}{
+\begin{itemize}
+\item first degree diploma
+\end{itemize}}
+
+\cventry{2019}{Russian Team Olympiad in Informatics}{}{}{}{
+\begin{itemize}
+\item prize-winner
+\end{itemize}}
+
+\cventry{2020}{All Siberian Programming Olympiad}{}{}{}{
+\begin{itemize}
+\item first degree diploma
+\end{itemize}}
+
+\cventry{2020}{Russian Olympiad in Informatics}{}{}{}{
+\begin{itemize}
+\item prize-winner
+\end{itemize}}
+
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\cvitem{Languages}{C/C++(A), Python(A), C\#(B), Lua(B), Assembly(B)}
+\cvitem{WebD}{HTML/CSS, JavaScript}
+\cvitem{Software}{CodeBlocks, Visual Studio, Atom, WingIDE}
+\cvitem{Utilities}{Anaconda, Git, Sublime Text, Jupyter Notebook}
+\cvitem{Communication}{Russian (native), English(advanced), German(intermediate)}
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+
+\section{Extra Curriculars}
+
+\cventry{May 2018 - Ongoing}{Olympiad math and programming tutor}{}{}{}{The students I teach go to schools like 57 and 179 in Moscow. There are very difficult entrance exams for students in eight grade and my students successfully pass them. Moreover, they have been doing well for several years. Some students successfully pass entrance exams in Tinkoff programming club. At the moment, three of my students entered the final stage of the All-Russian Olympiad for schoolchildren in programming.
+}
+
+\cventry{Jan 2018}{Hike in Switzerland}{}{}{}{Our team faced insurmountable difficulties in the form of a melting glacier. Fortunately, thanks to out teamwork soft skills, we were able to cope with all the challenges.
+}
+
+\cventry{June 2019}{30th Summer conference of the International mathematical Tournament of Towns}{}{}{}{In a small group of three, our team solved mathematical tasks for a month. As a result, we made progress in resolving paving mathematical problems and won awards.  
+}
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Interests}
+
+%\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+%\cvlistdoubleitem{Cycling}{Hiking}
+%\cvlistdoubleitem{Sketching}{Gaming}
+%\cvlistitem{Quizzing}
+%----------------------------------------------------------------------------------------
+
+\section{References}
+
+\begin{multicols}{2}
+\cventry{}{Yaschenko Ivan Valerievich}{\newline Mathematical analysis teacher}{\newline School 57, Moscow}{\newline +7(916)810-34-35}{}
+\columnbreak
+\cventry{}{Chumakov Oleg Olegovich}{\newline CEO}{\newline Luden.io, Moscow}{\newline oleg.chumakov@luden.io}{ }
+\end{multicols}
+%\cventry{}{Arpit Gupta}{\newline VP Engineering}{\newline Antriex IT Services}{\newline arpit.gupta@antmex.com}{}
+
+%\cventry{}{B.S.S Daniel}{\newline Professor}{\newline Metallurgical and Materials Engg., IIT Roorkee}{\newline s4danfmt@iitr.ac.in}{ }
+\end{document}
