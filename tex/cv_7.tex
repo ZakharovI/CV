@@ -35,19 +35,28 @@
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
+%Russian-specific packages
+%--------------------------------------
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+%--------------------------------------
+
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
 
-\firstname{Zakharov Igor \newline} % Your first name
-\familyname{Aleksandrovich} % Your last name
+\firstname{Захаров Игорь \newline} % Your first name
+\familyname{Александрович} % Your last name
 
 % All information in this block is optional, comment out any lines you don't need
 %\title{Curriculum Vitae}
-\address{13, Pushkinskaya}{Korolev, Russia 141090}
+\address{}{Москва, Россия}
 \mobile{+7 (916) 624 94 84}
 \email{ia2002zakharov@gmail.com}
-\extrainfo{\href{https://github.com/ZakharovI}{Github: ZakharovI}}
+\extrainfo{\href{https://github.com/ZakharovI}{Github: ZakharovI}\makenewline \href{https://t.me/IgorZzzzzz}{Telegram: @IgorZzzzzz}
+}
+%\extrainfo{\href{https://t.me/IgorZzzzzz}{Telegram: @IgorZzzzzz}}
 \photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 %\quote{"A witty and playful quotation" - John Smith}
 
@@ -82,13 +91,29 @@
 
 \makecvtitle % Print the CV title
 
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\cvitem{Языки пр.}{C++, C, C\#, Python}
+\cvitem{Софт}{Visual Studio, Atom, WingIDE, CodeBlocks}
+\cvitem{Прочее}{Git, Bash, TeX, Anaconda, Jupyter Notebook}
+\cvitem{Языки}{Русский (родной), Английский(advanced)}
+
+
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
 \section{Education}
 
-\cventry{May 2020 -- Ongoing}{Higher School of Economics}{\newline BA in Applied Mathematics and Computer Science}{}{}{GPA -- 6.9/10}  % Arguments not required can be left empty
+\cventry{Май 2020 -- настоящее время}{Национальный исследовательский университет «Высшая школа экономики»}{\newline Бакалавриат, Факультет компьютерных наук,\newline образовательная программа «Прикладная математика и информатика»,\newline специализация «Анализ данных и интеллектуальные системы»}{}{}{}
+
+\cventry{Сент. 2016 -- Май 2020}{ГБОУ Школа №57}{\newline Математический класс}{}{}{}% Arguments not required can be left empty
 %\cventry{2016}{D.A.V. Public School, Bistupur}{\newline Mathematics and Computer Science}{Class 12}{}{GPA -- 94.00\%}  % 
 %\cventry{2014}{A.D.L.S. Sunshine School, Sakchi}{\newline Mathematics and Computer Science}{Class 10}{}{GPA -- 95.20\%}  %
 %\section{%Masters Thesis}
@@ -103,37 +128,37 @@
 
 \section{Projects}
 
-\cventry{Sep 2018 -- May 2019}{Testing system for solving logical tasks on scheme-based programming language}{\textit{Gusarev Roman Valerievich, Moscow}}{}{}{
+\cventry{Сент. 2022 -- Окт. 2022}{Анализ статьи в рамках учебной практики}{\textit{\newlineКолесниченко Елена Юрьевна, НИУ ВШЭ}}{}{}{
 \begin{itemize}
-\item Scheme-based programming languge parcer.
-\item Frontend development.
+\item Анализ и перевод статьи Joshua Shagam (Департамент компьютерных наук университета штата Нью-Мексико) о применении AABB дерева для определения области видимости в динамических интерактивных 3D - системах.
+\item \href{https://drive.google.com/file/d/1sCxVQ8jgaMKa6eBGpeSLvWavnD2AztFH/view?usp=sharing}{Анализ и перевод статьи.}
+\item \href{https://www.cs.nmsu.edu/~joshagam/Solace/papers/master-writeup-print.pdf}{Оригинальная статья.}
 \end{itemize}}
 
-\cventry{May 2019 -- June 2019}{Programming summer school}{\textit{Zakharov Aleksander Timofeevich, Korolev}}{}{}{
+\cventry{Окт. 2021 -- Май 2022}{Разработка прототипа пошаговой стратегической игры}{\textit{\newlineЧумаков Олег Олегович, CEO Luden.io}}{}{}{
 \begin{itemize}
-\item Judge system setup.
-\item Creating olympiad programming curriculum (C' level).
+\item Процедурная генерация игрового поля и игрового окружения.
+\item Игровой логики и взаимодействие персонажей.
+\item Контроллер передвижения камеры.
+\item Участие в "Game Off 2021 jam".
+\item \href{https://arthadanel.itch.io/frantic-bugs}{Страница игры на itch.io.}
 \end{itemize}}
 
-\cventry{May 2020 -- June 2020}{Programming summer school}{\textit{Zakharov Aleksander Timofeevich, Korolev}}{}{}{
+\cventry{Май 2020 -- Июнь 2020}{Онлайн лагерь олимпиадного программирования}{\textit{Захаров Александер Тимофеевич}}{}{}{
 \begin{itemize}
-\item Judge system setup.
-\item Creating olympiad programming curriculum (Ccpp - B' level).
-\item Teaching small groups of students.
+\item Разработка учебного плана (уровень Ccpp - B').
+\item Разработка олимпиадных задач.
+\item Настройка тестирующей системы на платформе \href{https://codeforces.com}{Codeforces}.
+\item Преподавание малым группам школьников.
 \end{itemize}}
 
-\cventry{Sep 2018 -- May 2019}{Testing system for solving logical tasks on scheme-based programming language}{\textit{Gusarev Roman Valerievich, Moscow}}{}{}{
+\cventry{Май 2019 -- Июнь 2019}{Онлайн лагерь олимпиадного программирования}{\textit{Захаров Александер Тимофеевич}}{}{}{
 \begin{itemize}
-\item Scheme-based programming languge parcer.
-\item Frontend development.
+\item Разработка учебного плана (уровень C').
+\item Разработка олимпиадных задач.
+\item Настройка тестирующей системы на платформе \href{https://codeforces.com}{Codeforces}.
 \end{itemize}}
 
-\cventry{Oct 2020 -- Ongoing}{Development of a turn-based strategy game prototype}{\textit{Chumakov Oleg Olegovich, CEO Luden.io, Moscow}}{}{}{
-\begin{itemize}
-\item Procedural generation of card playing field.
-\item Working on game logic and units interaction.
-\item Participation in "Game Off 2021" jam.
-\end{itemize}}
 
 
 %\cventry{ Mar 2017}{Gaana (Songs) Downloader \href{https://github.com/sinAshish/Gaana-Downloader}{[Code]}}{\textit{Self-motivated}}{}{}{
@@ -144,47 +169,35 @@
 %----------------------------------------------------------------------------------------
 %	AWARDS SECTION
 %----------------------------------------------------------------------------------------
-
+\newpage
 \section{Achievements}
 
-\cventry{2017}{Russian Team Olympiad in Informatics}{}{}{}{
+\cventry{2020}{Всероссийская олимпиада школьников по программированию}{}{}{}{
 \begin{itemize}
-\item prize-winner
+\item Призер
 \end{itemize}}
 
-\cventry{2018}{Moscow Olympiad in Informatics}{}{}{}{
+\cventry{2020}{Всесибирская олимпиада школьников по программированию}{}{}{}{
 \begin{itemize}
-\item first degree diploma
+\item Диплом I степени
 \end{itemize}}
 
-\cventry{2019}{Russian Team Olympiad in Informatics}{}{}{}{
+\cventry{2019}{Всероссийская командная олимпиада школьников по программированию (ВКОШП)}{}{}{}{
 \begin{itemize}
-\item prize-winner
+\item Призер
 \end{itemize}}
 
-\cventry{2020}{All Siberian Programming Olympiad}{}{}{}{
+\cventry{2018}{Московская олимпиада школьников по информатике}{}{}{}{
 \begin{itemize}
-\item first degree diploma
+\item Диплом I степени.
 \end{itemize}}
 
-\cventry{2020}{Russian Olympiad in Informatics}{}{}{}{
+\cventry{2017}{Всероссийская командная олимпиада школьников по программированию (ВКОШП)}{}{}{}{
 \begin{itemize}
-\item prize-winner
+\item Призер
 \end{itemize}}
 
 
-
-%----------------------------------------------------------------------------------------
-%	COMPUTER SKILLS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Skills}
-
-\cvitem{Languages}{C/C++(A), Python(A), C\#(B), Lua(B), Assembly(B)}
-\cvitem{WebD}{HTML/CSS, JavaScript}
-\cvitem{Software}{CodeBlocks, Visual Studio, Atom, WingIDE}
-\cvitem{Utilities}{Anaconda, Git, Sublime Text, Jupyter Notebook}
-\cvitem{Communication}{Russian (native), English(advanced), German(intermediate)}
 %----------------------------------------------------------------------------------------
 %	COMMUNICATION SKILLS SECTION
 %----------------------------------------------------------------------------------------
@@ -192,14 +205,9 @@
 
 \section{Extra Curriculars}
 
-\cventry{May 2018 - Ongoing}{Olympiad math and programming tutor}{}{}{}{The students I teach go to schools like 57 and 179 in Moscow. There are very difficult entrance exams for students in eight grade and my students successfully pass them. Moreover, they have been doing well for several years. Some students successfully pass entrance exams in Tinkoff programming club. At the moment, three of my students entered the final stage of the All-Russian Olympiad for schoolchildren in programming.
+\cventry{Май 2018 -- настоящее время}{Репетитор по олимпиадному программированию и математике}{}{}{}{Мои ученики успешно сдают вступительные экзамены в математические классы 57 и 179 школы г. Москвы. Некоторые из них также поступают на кружок по программированию от Tinkoff. На данный момент шестеро моих учеников учатся в ведущих математических школах страны.
 }
 
-\cventry{Jan 2018}{Hike in Switzerland}{}{}{}{Our team faced insurmountable difficulties in the form of a melting glacier. Fortunately, thanks to out teamwork soft skills, we were able to cope with all the challenges.
-}
-
-\cventry{June 2019}{30th Summer conference of the International mathematical Tournament of Towns}{}{}{}{In a small group of three, our team solved mathematical tasks for a month. As a result, we made progress in resolving paving mathematical problems and won awards.  
-}
 %----------------------------------------------------------------------------------------
 %	INTERESTS SECTION
 %----------------------------------------------------------------------------------------
@@ -216,9 +224,9 @@
 \section{References}
 
 \begin{multicols}{2}
-\cventry{}{Yaschenko Ivan Valerievich}{\newline Mathematical analysis teacher}{\newline School 57, Moscow}{\newline +7(916)810-34-35}{}
+\cventry{}{Ященко Иван Валериевич}{\newlineПреподаватель НИУ ВШЭ,\newlineПреподаватель школы №57,\newlineДиректор МЦНМО}{}{\newline +7(916)810-34-35}{}
 \columnbreak
-\cventry{}{Chumakov Oleg Olegovich}{\newline CEO}{\newline Luden.io, Moscow}{\newline oleg.chumakov@luden.io}{ }
+\cventry{}{Чумаков Олег Олегович}{\newline CEO Luden.io}{}{\newline oleg.chumakov@luden.io}{ }
 \end{multicols}
 %\cventry{}{Arpit Gupta}{\newline VP Engineering}{\newline Antriex IT Services}{\newline arpit.gupta@antmex.com}{}
 
