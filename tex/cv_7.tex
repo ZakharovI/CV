@@ -1,139 +1,116 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% "ModernCV" CV and Cover Letter
-% LaTeX Template
-% Version 1.3 (29/10/16)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Xavier Danaux (xdanaux@gmail.com) with modifications by:
-% Vel (vel@latextemplates.com)
-%
-% License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
-%
-% Important note:
-% This template requires the moderncv.cls and .sty files to be in the same 
-% directory as this .tex file. These files provide the resume style and themes 
-% used for structuring the document.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
 
-\documentclass[12pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
-
-\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-\usepackage{multicol}
-\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
-\usepackage[hyperref]{}
-\usepackage[scale=0.9]{geometry} % Reduce document margins
-%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
-%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
-
-%Russian-specific packages
 %--------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%--------------------------------------
+
+
+\documentclass[12pt, a4paper, sans]{moderncv} 
+% Font sizes: 10, 11, or 12
+% Paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape
+% Font families: sans or roman
+
+\moderncvstyle{classic} 
+% CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+
+\moderncvcolor{blue} 
+% CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{multicol}
+
+\usepackage{lipsum} 
+% Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[hyperref]{}
+
+\usepackage[scale=0.9]{geometry} 
+% Reduce document margins
+
+%\setlength{\hintscolumnwidth}{3cm} 
+% Uncomment to change the width of the dates column
+
+%\setlength{\makecvtitlenamewidth}{10cm} 
+% For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
 \usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[russian]{babel}
+%Russian-specific packages
+
+
+%--------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
 %--------------------------------------
 
-%----------------------------------------------------------------------------------------
-%	NAME AND CONTACT INFORMATION SECTION
-%----------------------------------------------------------------------------------------
 
-\firstname{Захаров Игорь \newline} % Your first name
-\familyname{Александрович} % Your last name
+\firstname{Захаров Игорь \newline} 
+\familyname{Александрович} 
 
-% All information in this block is optional, comment out any lines you don't need
-%\title{Curriculum Vitae}
 \address{}{Москва, Россия}
 \mobile{+7 (916) 624 94 84}
 \email{ia2002zakharov@gmail.com}
-\extrainfo{\href{https://github.com/ZakharovI}{Github: ZakharovI}\makenewline \href{https://t.me/IgorZzzzzz}{Telegram: @IgorZzzzzz}
-}
-%\extrainfo{\href{https://t.me/IgorZzzzzz}{Telegram: @IgorZzzzzz}}
-\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
-%\quote{"A witty and playful quotation" - John Smith}
+\extrainfo{\href{https://t.me/IgorZzzzzz}{Telegram: @IgorZzzzzz}}
 
-%----------------------------------------------------------------------------------------
+\photo[100pt][0.4pt]{pictures/photo} 
+% The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+
+
+%--------------------------------------
+%	CURRICULUM VITAE
+%--------------------------------------
+
 
 \begin{document}
 
-%----------------------------------------------------------------------------------------
-%	COVER LETTER
-%----------------------------------------------------------------------------------------
-
-% To remove the cover letter, comment out this entire block
-
-%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
-%\date{\today} % Letter date
-%\opening{Dear Sir or Madam,} % Opening greeting
-%\closing{Sincerely yours,} % Closing phrase
-%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
-%
-%\makelettertitle % Print letter title
-%
-%\lipsum[1-2] % Dummy text
-%\lipsum[4] % Dummy text
-%
-%\makeletterclosing % Print letter signature
-%
-%\newpage
-
-%----------------------------------------------------------------------------------------
-%	CURRICULUM VITAE
-%----------------------------------------------------------------------------------------
-
-\makecvtitle % Print the CV title
+\makecvtitle 
+% Print the CV title
 
 
-
-%----------------------------------------------------------------------------------------
+%--------------------------------------
 %	COMPUTER SKILLS SECTION
-%----------------------------------------------------------------------------------------
+%--------------------------------------
+
 
 \section{Skills}
 
-\cvitem{Языки пр.}{C++, C, C\#, Python}
-\cvitem{Софт}{Visual Studio, Atom, WingIDE, CodeBlocks}
-\cvitem{Прочее}{Git, Bash, TeX, Anaconda, Jupyter Notebook}
-\cvitem{Языки}{Русский (родной), Английский(advanced)}
+\cvitem{Языки пр.}{Python, C++, C}
+\cvitem{Навыки}{SQL, Git, Bash, Docker, Airflow, TeX}
+\cvitem{Языки}{Русский, Английский С1}
 
 
-%----------------------------------------------------------------------------------------
+%--------------------------------------
+%	EXPERIENCE SECTION
+%--------------------------------------
+
+
+\section{Experience}
+
+\cventry{Янв. 2023 -- н. в.}{ООО ВБ Тех}{\newline Аналитик в команде ранжирования.}{}{}{\begin{itemize}
+\item Учет цены в ранжировании.
+\item Разработка сервиса для мониторинга изменений коэффициентов ранжирования.
+\item Telegram-бот для уведомлений об ошибках в airflow.
+\end{itemize}}
+
+
+%--------------------------------------
 %	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
+%--------------------------------------
+
 
 \section{Education}
 
-\cventry{Май 2020 -- настоящее время}{Национальный исследовательский университет «Высшая школа экономики»}{\newline Бакалавриат, Факультет компьютерных наук,\newline образовательная программа «Прикладная математика и информатика»,\newline специализация «Анализ данных и интеллектуальные системы»}{}{}{}
+\cventry{Сент. 2024 -- н. в.}{Магистратура НИУ ВШЭ}{\newline Факультет компьютерных наук,\newline образовательная программа «Магистр по наукам о данных»}{}{}{}
 
-\cventry{Сент. 2016 -- Май 2020}{ГБОУ Школа №57}{\newline Математический класс}{}{}{}% Arguments not required can be left empty
-%\cventry{2016}{D.A.V. Public School, Bistupur}{\newline Mathematics and Computer Science}{Class 12}{}{GPA -- 94.00\%}  % 
-%\cventry{2014}{A.D.L.S. Sunshine School, Sakchi}{\newline Mathematics and Computer Science}{Class 10}{}{GPA -- 95.20\%}  %
-%\section{%Masters Thesis}
+\cventry{Сент. 2020 -- Июнь 2024}{Бакалавриант НИУ ВШЭ}{\newline Факультет компьютерных наук,\newline образовательная программа «Прикладная математика и информатика»,\newline специализация «Анализ данных и интеллектуальные системы»}{}{}{}
 
-%\cvitem{Title}{\emph{Money Is The Root Of All Evil -- Or Is It?}}
-%\cvitem{Supervisors}{Professor James Smith \& Associate Professor Jane Smith}
-%\cvitem{Description}{This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.}
+\cventry{Сент. 2016 -- Май 2020}{ГБОУ Школа №57}{\newline Математический класс}{}{}{}
 
-%\cventry{2011--2012}{Summer Intern}{\textsc{Lehman Brothers}}{Los Angeles}{}{Rated "truly distinctive" for Analytical Skills and Teamwork.}
+%--------------------------------------
+%	PROJECTS SECTION
+%--------------------------------------
 
-%------------------------------------------------
 
 \section{Projects}
-
-\cventry{Сент. 2022 -- Окт. 2022}{Анализ статьи в рамках учебной практики}{\textit{\newlineКолесниченко Елена Юрьевна, НИУ ВШЭ}}{}{}{
-\begin{itemize}
-\item Анализ и перевод статьи Joshua Shagam (Департамент компьютерных наук университета штата Нью-Мексико) о применении AABB дерева для определения области видимости в динамических интерактивных 3D - системах.
-\item \href{https://drive.google.com/file/d/1sCxVQ8jgaMKa6eBGpeSLvWavnD2AztFH/view?usp=sharing}{Анализ и перевод статьи.}
-\item \href{https://www.cs.nmsu.edu/~joshagam/Solace/papers/master-writeup-print.pdf}{Оригинальная статья.}
-\end{itemize}}
 
 \cventry{Окт. 2021 -- Май 2022}{Разработка прототипа пошаговой стратегической игры}{\textit{\newlineЧумаков Олег Олегович, CEO Luden.io}}{}{}{
 \begin{itemize}
@@ -144,31 +121,12 @@
 \item \href{https://arthadanel.itch.io/frantic-bugs}{Страница игры на itch.io.}
 \end{itemize}}
 
-\cventry{Май 2020 -- Июнь 2020}{Онлайн лагерь олимпиадного программирования}{\textit{Захаров Александер Тимофеевич}}{}{}{
-\begin{itemize}
-\item Разработка учебного плана (уровень Ccpp - B').
-\item Разработка олимпиадных задач.
-\item Настройка тестирующей системы на платформе \href{https://codeforces.com}{Codeforces}.
-\item Преподавание малым группам школьников.
-\end{itemize}}
 
-\cventry{Май 2019 -- Июнь 2019}{Онлайн лагерь олимпиадного программирования}{\textit{Захаров Александер Тимофеевич}}{}{}{
-\begin{itemize}
-\item Разработка учебного плана (уровень C').
-\item Разработка олимпиадных задач.
-\item Настройка тестирующей системы на платформе \href{https://codeforces.com}{Codeforces}.
-\end{itemize}}
-
-
-
-%\cventry{ Mar 2017}{Gaana (Songs) Downloader \href{https://github.com/sinAshish/Gaana-Downloader}{[Code]}}{\textit{Self-motivated}}{}{}{
-%\begin{itemize}
-%\item A script to download all the songs from \href{https://www.gaana.com}{gaana.com} by just entering the album name.
-%\end{itemize}}
-%
-%----------------------------------------------------------------------------------------
+%--------------------------------------
 %	AWARDS SECTION
-%----------------------------------------------------------------------------------------
+%--------------------------------------
+
+
 \newpage
 \section{Achievements}
 
@@ -198,37 +156,30 @@
 \end{itemize}}
 
 
-%----------------------------------------------------------------------------------------
+%--------------------------------------
 %	COMMUNICATION SKILLS SECTION
-%----------------------------------------------------------------------------------------
+%--------------------------------------
 
 
 \section{Extra Curriculars}
 
-\cventry{Май 2018 -- настоящее время}{Репетитор по олимпиадному программированию и математике}{}{}{}{Мои ученики успешно сдают вступительные экзамены в математические классы 57 и 179 школы г. Москвы. Некоторые из них также поступают на кружок по программированию от Tinkoff. На данный момент шестеро моих учеников учатся в ведущих математических школах страны.
+\cventry{Май 2018 -- настоящее время}{Репетитор по олимпиадному программированию}{}{}{}{Мои ученики успешно сдают вступительные экзамены в математические классы 57 и 179 школы г. Москвы. Некоторые из них также поступают на кружки по программированию от Tinkoff и Яндекс. На данный момент шестеро моих учеников учатся в ведущих математических школах страны.
 }
 
-%----------------------------------------------------------------------------------------
-%	INTERESTS SECTION
-%----------------------------------------------------------------------------------------
 
-%\section{Interests}
+%--------------------------------------
+%	REFERENCES SECTION
+%--------------------------------------
 
-%\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
-
-%\cvlistdoubleitem{Cycling}{Hiking}
-%\cvlistdoubleitem{Sketching}{Gaming}
-%\cvlistitem{Quizzing}
-%----------------------------------------------------------------------------------------
 
 \section{References}
 
 \begin{multicols}{2}
+
 \cventry{}{Ященко Иван Валериевич}{\newlineПреподаватель НИУ ВШЭ,\newlineПреподаватель школы №57,\newlineДиректор МЦНМО}{}{\newline +7(916)810-34-35}{}
 \columnbreak
+
 \cventry{}{Чумаков Олег Олегович}{\newline CEO Luden.io}{}{\newline oleg.chumakov@luden.io}{ }
 \end{multicols}
-%\cventry{}{Arpit Gupta}{\newline VP Engineering}{\newline Antriex IT Services}{\newline arpit.gupta@antmex.com}{}
 
-%\cventry{}{B.S.S Daniel}{\newline Professor}{\newline Metallurgical and Materials Engg., IIT Roorkee}{\newline s4danfmt@iitr.ac.in}{ }
 \end{document}
