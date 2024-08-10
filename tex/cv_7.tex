@@ -5,7 +5,7 @@
 %--------------------------------------
 
 
-\documentclass[12pt, a4paper, sans]{moderncv} 
+\documentclass[12pt, a4paper, roman]{moderncv} 
 % Font sizes: 10, 11, or 12
 % Paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape
 % Font families: sans or roman
@@ -26,15 +26,20 @@
 \usepackage[scale=0.9]{geometry} 
 % Reduce document margins
 
-%\setlength{\hintscolumnwidth}{3cm} 
+%\setlength{\hintscolumnwidth}{3.5cm} 
 % Uncomment to change the width of the dates column
 
 %\setlength{\makecvtitlenamewidth}{10cm} 
 % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
 \usepackage[T2A]{fontenc}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{listingsutf8}
 \usepackage[utf8]{inputenc}
 \usepackage[russian]{babel}
+
+\usepackage{comment}
 %Russian-specific packages
 
 
@@ -51,7 +56,7 @@
 \email{ia2002zakharov@gmail.com}
 \extrainfo{\href{https://t.me/IgorZzzzzz}{Telegram: @IgorZzzzzz}}
 
-\photo[100pt][0.4pt]{pictures/photo} 
+\photo[80pt][0.4pt]{pictures/photo_2 (1)} 
 % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 
 
@@ -71,10 +76,11 @@
 %--------------------------------------
 
 
-\section{Skills}
+\section{Навыки}
 
-\cvitem{Языки пр.}{Python, C++, C}
-\cvitem{Навыки}{SQL, Git, Bash, Docker, Airflow, TeX}
+\cvitem{Языки пр.}{Python, SQL, C++, C}
+\cvitem{Фреймворки}{NumPy, Pandas, Dash, Scikit-Learn, SciPy, PyTorch}
+\cvitem{Инструменты}{PostgreSQL, MySQL, Git, Bash, Docker, Airflow, TeX, HTML, CSS}
 \cvitem{Языки}{Русский, Английский С1}
 
 
@@ -83,10 +89,10 @@
 %--------------------------------------
 
 
-\section{Experience}
+\section{Опыт работы}
 
-\cventry{Янв. 2023 -- н. в.}{ООО ВБ Тех}{\newline Аналитик в команде ранжирования.}{}{}{\begin{itemize}
-\item Учет цены в ранжировании.
+\cventry{Янв. 2023 -- н. в.}{Wildberries}{\newline Аналитик в команде ранжирования}{}{}{\begin{itemize}
+\item Feature engineering. Учет цены в ранжировании.
 \item Разработка сервиса для мониторинга изменений коэффициентов ранжирования.
 \item Telegram-бот для уведомлений об ошибках в airflow.
 \end{itemize}}
@@ -97,26 +103,24 @@
 %--------------------------------------
 
 
-\section{Education}
+\section{Образование}
 
 \cventry{Сент. 2024 -- н. в.}{Магистратура НИУ ВШЭ}{\newline Факультет компьютерных наук,\newline образовательная программа «Магистр по наукам о данных»}{}{}{}
 
 \cventry{Сент. 2020 -- Июнь 2024}{Бакалавриант НИУ ВШЭ}{\newline Факультет компьютерных наук,\newline образовательная программа «Прикладная математика и информатика»,\newline специализация «Анализ данных и интеллектуальные системы»}{}{}{}
-
-\cventry{Сент. 2016 -- Май 2020}{ГБОУ Школа №57}{\newline Математический класс}{}{}{}
 
 %--------------------------------------
 %	PROJECTS SECTION
 %--------------------------------------
 
 
-\section{Projects}
+\section{Проекты}
 
 \cventry{Окт. 2021 -- Май 2022}{Разработка прототипа пошаговой стратегической игры}{\textit{\newlineЧумаков Олег Олегович, CEO Luden.io}}{}{}{
 \begin{itemize}
 \item Процедурная генерация игрового поля и игрового окружения.
-\item Игровой логики и взаимодействие персонажей.
-\item Контроллер передвижения камеры.
+\item Игровая логика и взаимодействие персонажей.
+%\item Контроллер передвижения камеры.
 \item Участие в "Game Off 2021 jam".
 \item \href{https://arthadanel.itch.io/frantic-bugs}{Страница игры на itch.io.}
 \end{itemize}}
@@ -126,9 +130,7 @@
 %	AWARDS SECTION
 %--------------------------------------
 
-
-\newpage
-\section{Achievements}
+\section{Достижения}
 
 \cventry{2020}{Всероссийская олимпиада школьников по программированию}{}{}{}{
 \begin{itemize}
@@ -150,20 +152,23 @@
 \item Диплом I степени.
 \end{itemize}}
 
-\cventry{2017}{Всероссийская командная олимпиада школьников по программированию (ВКОШП)}{}{}{}{
-\begin{itemize}
-\item Призер
-\end{itemize}}
+%\cventry{2017}{Всероссийская командная олимпиада школьников по программированию (ВКОШП)}{}{}{}{
+%\begin{itemize}
+%\item Призер
+%\end{itemize}}
 
+%\newpage text
+
+\begin{comment}
+
+
+\section{Extra Curriculars}
 
 %--------------------------------------
 %	COMMUNICATION SKILLS SECTION
 %--------------------------------------
 
-
-\section{Extra Curriculars}
-
-\cventry{Май 2018 -- настоящее время}{Репетитор по олимпиадному программированию}{}{}{}{Мои ученики успешно сдают вступительные экзамены в математические классы 57 и 179 школы г. Москвы. Некоторые из них также поступают на кружки по программированию от Tinkoff и Яндекс. На данный момент шестеро моих учеников учатся в ведущих математических школах страны.
+\cventry{Май 2018 -- н. в.}{Репетитор по олимпиадному программированию}{}{}{}{Мои ученики успешно сдают вступительные экзамены в математические классы 57 и 179 школы г. Москвы. Некоторые из них также поступают на кружки по программированию от Tinkoff и Яндекс. На данный момент шестеро моих учеников учатся в ведущих математических школах страны.
 }
 
 
@@ -172,7 +177,7 @@
 %--------------------------------------
 
 
-\section{References}
+\section{Рекомендации}
 
 \begin{multicols}{2}
 
@@ -181,5 +186,7 @@
 
 \cventry{}{Чумаков Олег Олегович}{\newline CEO Luden.io}{}{\newline oleg.chumakov@luden.io}{ }
 \end{multicols}
+
+\end{comment}
 
 \end{document}
